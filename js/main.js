@@ -12,7 +12,7 @@ form.addEventListener("submit", (evento) => {
     const nome = evento.target.elements['nome'];
     const quantidade = evento.target.elements['quantidade'];
 
-    const existe = itens.find( elemento => elemento.nome === nome.value);
+    const existe = itens.findIndex( elemento => elemento.nome === nome.value);
 
     const itemAtual = {
         "nome": nome.value,

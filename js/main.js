@@ -12,7 +12,7 @@ form.addEventListener("submit", (evento) => {
     const nome = evento.target.elements['nome'];
     const quantidade = evento.target.elements['quantidade'];
 
-    const existe = itens.findIndex( elemento => elemento.nome === nome.value);
+    const existe = itens.find( elemento => elemento.nome === nome.value);
 
     const itemAtual = {
         "nome": nome.value,
@@ -24,7 +24,7 @@ form.addEventListener("submit", (evento) => {
         atualizaElemento(itemAtual);
         itens[itens.findIndex(elemento => elemento.id === existe.id)] = itemAtual;
     } else {
-        itemAtual.id = itens[itens.length -1] ? itens[itens.length -1].id + 1 : 0;
+        itemAtual.id = itens[itens.length -1] ? (itens[itens.length -1]).id + 1 : 0;
         criaElemento(itemAtual);
         itens.push(itemAtual);
     }
@@ -43,8 +43,8 @@ function criaElemento(item) {
     const numeroItem = document.createElement('strong');
     numeroItem.innerHTML = item.quantidade;
     numeroItem.dataset.id = item.id;
-
     novoItem.appendChild(numeroItem);
+
     novoItem.innerHTML += item.nome;
 
     novoItem.appendChild(botaoDeleta(item.id));

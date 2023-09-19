@@ -13,9 +13,12 @@ PS.: A mochila foi desenhada com CSS e é um projeto da Tricia Katz (https://cod
 - `Atualizar item na lista`: o usuário pode atualizar um item na lista ao inserir o nome e nova quantidade desejada e clicar no botão "adicionar".
 - `Remover item da lista`: O usuário pode remover o item da lista ao clicar no botão "x".
 
+![apresentacao-alura-mochila-viagem840-min](https://github.com/CamilaSah/alura-mochila-de-viagem/assets/128820692/57a028ee-8665-42a8-9543-84b54f9180ac)
+
+
 ## 📁 Acesso ao projeto
 
-Você pode acessar o projeto clicando [aqui]
+Você pode acessar o projeto clicando [aqui](https://alura-mochila-de-viagem-zeta.vercel.app/).
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
